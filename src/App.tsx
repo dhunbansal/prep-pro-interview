@@ -19,12 +19,14 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/interview" element={<Interview />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <div className="w-full max-w-full mx-auto">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/interview" element={<Interview />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
         </BrowserRouter>
       </UserProvider>
     </TooltipProvider>
